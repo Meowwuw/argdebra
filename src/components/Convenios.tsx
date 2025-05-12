@@ -6,7 +6,6 @@ export default function Convenios() {
   const [activeTab, setActiveTab] = useState('todos');
   const [expandedResolution, setExpandedResolution] = useState<number | null>(null);
 
-  // Definición de la interfaz para las resoluciones
   interface Resolucion {
     id: number;
     universidad: string;
@@ -17,7 +16,6 @@ export default function Convenios() {
     pdf: string;
   }
 
-  // Lista de convenios/resoluciones
   const resoluciones: Resolucion[] = [
     {
       id: 1,
@@ -66,12 +64,10 @@ export default function Convenios() {
     }
   ];
 
-  // Filtrar resoluciones según la pestaña activa
   const filteredResolutions = activeTab === 'todos' 
     ? resoluciones 
     : resoluciones.filter(res => res.universidad === activeTab);
 
-  // Función para alternar la expansión de una resolución
   const toggleResolution = (id: number) => {
     setExpandedResolution(expandedResolution === id ? null : id);
   };
