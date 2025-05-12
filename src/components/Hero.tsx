@@ -23,7 +23,7 @@ const slides = [
   {
     title: "APRENDE A TU RITMO DESDE DONDE ESTÉS",
     description: "Programas a distancia diseñados para profesionales que buscan flexibilidad",
-    image: "/carrusel1.jpg",
+    image: "/carrusel3.jpg",
   },
   {
     title: "COORDINADOR BIM DE PROYECTOS DE EDIFICACIÓN",
@@ -33,7 +33,7 @@ const slides = [
   {
     title: "ADMINISTRACIÓN DE CLÍNICAS Y HOSPITALES",
     description: "Gestión estratégica de recursos para asegurar eficiencia y calidad en la atención médica.",
-    image: "/carrusel3.jpg",
+    image: "/carrusel1.jpg",
   },
 ];
 

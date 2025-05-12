@@ -6,14 +6,12 @@ import { Navigation  } from "swiper/modules";
 import Image from "next/image";
 
 const categories = [
-  { name: "Enfermeria", image: "/categoria1.jpg" },
-  { name: "Ingenieria", image: "/categoria2.jpg" },
-  { name: "Gestión Pública", image: "/categoria3.jpg" },
-  { name: "Docencia", image: "/categoria4.jpg" },
-  { name: "Enfermeria", image: "/categoria1.jpg" },
-  { name: "Ingenieria", image: "/categoria2.jpg" },
-  { name: "Gestión Pública", image: "/categoria3.jpg" },
-  { name: "Docencia", image: "/categoria4.jpg" },
+  { name: "PROGRAMAS DE GESTIÓN Y ADMINISTRACIÓN", image: "/categoria5.webp" },
+  { name: "PROGRAMAS DE INGENIERIA", image: "/categoria2.jpg" },
+  { name: "PROGRAMAS DE DERECHO", image: "/categoria3.jpg" },
+  { name: "PROGRAMAS DE EDUCACIÓN", image: "/categoria4.jpg" },
+  { name: "PROGRAMAS DE SALUD", image: "/categoria1.jpg" },
+  { name: "PROGRAMAS TÉCNICOS", image: "/categoria6.jpg" },
 ];
 
 export default function CategoryCarousel() {
