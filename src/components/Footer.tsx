@@ -1,12 +1,14 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa';
+import { FaFacebook, FaWhatsapp } from 'react-icons/fa';
+import { FiPhone } from 'react-icons/fi';
 
 const Footer = () => {
   return (
     <footer className="text-white">
       <div className="w-full mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-5">
+          {/* Logo */}
           <div className="flex justify-center items-center bg-white py-12 px-4 md:col-span-2">
             <Image
               src="/logo.png"
@@ -18,8 +20,10 @@ const Footer = () => {
             />
           </div>
 
+          {/* Enlaces y contacto */}
           <div className="md:col-span-3 bg-[#00AEFF] py-12 px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+              {/* Enlaces rápidos */}
               <div className="text-center sm:text-left">
                 <h3 className="font-bold text-lg mb-4">Enlaces Rápidos</h3>
                 <ul className="space-y-2">
@@ -30,19 +34,34 @@ const Footer = () => {
                 </ul>
               </div>
 
+              {/* Contacto y redes */}
               <div className="text-center sm:text-left">
-                <h3 className="font-bold text-lg mb-4">Síguenos en:</h3>
+                <h3 className="font-bold text-lg mb-4">Contáctanos</h3>
+                
+                <div className="text-sm mb-4 space-y-1">
+                  <p className="flex items-center gap-2"><FiPhone /> Teléfono: 061 - 605292</p>
+                  <p className="flex items-center gap-2"><FaWhatsapp /> 942018158 / 942018189</p>
+                </div>
+
                 <div className="flex justify-center sm:justify-start space-x-4 mb-6">
-                  <a href="#" className="hover:text-gray-200 text-2xl transition-colors">
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100090634964809"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-gray-200 text-2xl transition-colors"
+                  >
                     <FaFacebook />
                   </a>
-                  <a href="#" className="hover:text-gray-200 text-2xl transition-colors">
-                    <FaInstagram />
-                  </a>
-                  <a href="#" className="hover:text-gray-200 text-2xl transition-colors">
+                  <a
+                    href="https://wa.me/51942018158"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-gray-200 text-2xl transition-colors"
+                  >
                     <FaWhatsapp />
                   </a>
                 </div>
+
                 <div className="text-sm">
                   <p className="mb-2">© 2024 Argdebra. Todos los derechos reservados.</p>
                   <div className="flex flex-col space-y-1">
