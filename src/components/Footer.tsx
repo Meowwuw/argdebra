@@ -62,7 +62,7 @@ const Footer = () => {
                 </div>
 
                 <div className="text-sm">
-                  <p className="mb-2">© 2024 Argdebra. Todos los derechos reservados.</p>
+                  <p className="mb-2">© 2025 Argdebra. Todos los derechos reservados.</p>
                   <div className="flex flex-col space-y-1">
                     <Link href="/terminos" className="hover:text-gray-200 transition-colors">
                       Términos y condiciones
