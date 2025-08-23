@@ -26,7 +26,6 @@ export default function Navbar() {
   const menuItems = [
     { label: 'Inicio', href: '/' },
     { label: 'Cursos', href: '/cursos' },
-    { label: 'Nosotros', href: '/nosotros' },
     { label: 'Convenios', href: '/convenios' },
     { label: 'Promotores', href: '/promotores' },
     {

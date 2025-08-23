@@ -12,14 +12,14 @@ type Curso = {
 
 const cursosData: Curso[] = [
   { id: 1, titulo: 'ADMINISTRACIÓN DE EMPRESAS', categoria: 'Administración', imagen: '/administracion.jpg' },
-  { id: 4, titulo: 'ADMINISTRACIÓN Y GESTIÓN PÚBLICA', categoria: 'Administración', imagen: '/administracion2.jpg' },
-  { id: 16, titulo: 'CONTABILIDAD', categoria: 'Contabilidad', imagen: '/contabilidad.jpg' },
-  { id: 17, titulo: 'PLANIFICACIÓN Y PRESUPUESTO PÚBLICO', categoria: 'Economía', imagen: '/planificacion.jpg' },
-  { id: 33, titulo: 'SALUD OCUPACIONAL', categoria: 'Salud', imagen: '/saludOcupacional.jpg' },
-  { id: 38, titulo: 'HEMOTERAPIA Y BANCO DE SANGRE', categoria: 'Salud', imagen: '/hemoterapia.jpg' },
-  { id: 43, titulo: 'EMERGENCIAS OBSTÉTRICAS', categoria: 'Salud', imagen: '/obstetricas.jpg' },
-  { id: 50, titulo: 'ENFERMERÍA NEONATAL Y PEDIÁTRICA', categoria: 'Salud', imagen: '/neonatal.jpg' },
-  { id: 52, titulo: 'ENFERMERÍA TÉCNICA', categoria: 'Salud', imagen: '/enfermeria.jpg' },
+  { id: 2, titulo: 'ADMINISTRACIÓN Y GESTIÓN PÚBLICA', categoria: 'Administración', imagen: '/administracion2.jpg' },
+  { id: 3, titulo: 'CONTABILIDAD', categoria: 'Contabilidad', imagen: '/contabilidad.jpg' },
+  { id: 4, titulo: 'PLANIFICACIÓN Y PRESUPUESTO PÚBLICO', categoria: 'Economía', imagen: '/planificacion.jpg' },
+  { id: 5, titulo: 'SALUD OCUPACIONAL', categoria: 'Salud', imagen: '/saludOcupacional.jpg' },
+  { id: 6, titulo: 'HEMOTERAPIA Y BANCO DE SANGRE', categoria: 'Salud', imagen: '/hemoterapia.jpg' },
+  { id: 7, titulo: 'EMERGENCIAS OBSTÉTRICAS', categoria: 'Salud', imagen: '/obstetricas.jpg' },
+  { id: 8, titulo: 'ENFERMERÍA NEONATAL Y PEDIÁTRICA', categoria: 'Salud', imagen: '/neonatal.jpg' },
+  { id: 9, titulo: 'ENFERMERÍA TÉCNICA', categoria: 'Salud', imagen: '/enfermeria.jpg' },
 ];
 
 export default function Cursos() {

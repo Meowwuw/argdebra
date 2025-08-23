@@ -299,7 +299,7 @@ export default function CursosPage() {
                 </label>
                 <select
                   id="categoria"
-                  className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md"
+                  className="mt-1 block w-full pl-3 pr-10 py-2 text-base text-gray-900 border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md border"
                   value={categoriaSeleccionada}
                   onChange={(e) => setCategoriaSeleccionada(e.target.value)}
                 >
@@ -321,7 +321,7 @@ export default function CursosPage() {
                 </label>
                 <select
                   id="nivel"
-                  className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md"
+                  className="mt-1 block w-full pl-3 pr-10 py-2 text-base text-gray-900 border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md border"
                   value={nivelSeleccionado}
                   onChange={(e) => setNivelSeleccionado(e.target.value)}
                 >
@@ -414,7 +414,7 @@ export default function CursosPage() {
             </div>
           )}
 
-          {/* Paginación (para implementación futura) */}
+          {/* Paginación (para implementación futura) 
           <div className="mt-8 flex justify-center">
             <nav
               className="relative z-0 inline-flex rounded-md shadow-sm -space-x-px"
@@ -492,7 +492,7 @@ export default function CursosPage() {
                 </svg>
               </a>
             </nav>
-          </div>
+          </div>*/}
         </div>
       </main>
     </>
