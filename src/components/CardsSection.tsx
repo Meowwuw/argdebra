@@ -80,7 +80,7 @@ export default function MisionVisionSection() {
                 </p>
                 <div className="bg-white p-4 rounded-lg shadow-md border-l-4 border-[#00AEFF]">
                   <p className="text-gray-700 italic">
-                    "Nuestro compromiso es la excelencia educativa y el desarrollo profesional de calidad."
+                    Nuestro compromiso es la excelencia educativa y el desarrollo profesional de calidad.
                   </p>
                 </div>
               </motion.div>
