@@ -2,11 +2,7 @@
 import React, { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import {
-  FiExternalLink,
-  FiChevronDown,
-  FiSearch,
-} from "react-icons/fi";
+import { FiExternalLink, FiChevronDown, FiSearch } from "react-icons/fi";
 
 export default function Convenios() {
   const [activeTab, setActiveTab] = useState("todos");
@@ -120,7 +116,7 @@ export default function Convenios() {
         {/* Contenido Principal */}
         <div className="container mx-auto px-4 py-12">
           {/* Introducción */}
-          <div className="max-w-4xl mx-auto text-center mb-12">
+          <div className="max-w-4xl mx-auto justify-center mb-12">
             <p className="text-gray-600">
               En el Instituto de Capacitación y Actualización Profesional,
               contamos con el respaldo oficial de prestigiosas universidades que
@@ -261,13 +257,13 @@ export default function Convenios() {
             </div>
 
             <div className="max-w-lg mx-auto">
-              <div className="flex">
+              <div className="flex flex-col sm:flex-row">
                 <input
                   type="text"
                   placeholder="Ingresa el código de verificación"
-                  className="flex-1 px-4 py-3 rounded-l-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#00AEFF] focus:border-transparent"
+                  className="flex-1 px-4 py-3 rounded-t-md sm:rounded-l-md sm:rounded-tr-none border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#00AEFF] focus:border-transparent"
                 />
-                <button className="bg-[#00AEFF] text-white px-5 py-3 rounded-r-md hover:bg-blue-600 flex items-center">
+                <button className="bg-[#00AEFF] text-white px-5 py-3 rounded-b-md sm:rounded-r-md sm:rounded-bl-none hover:bg-blue-600 flex items-center justify-center">
                   <FiSearch className="mr-2" />
                   <span>Verificar</span>
                 </button>
