@@ -7,33 +7,29 @@ import { FiSearch, FiMapPin } from "react-icons/fi";
 type Promotor = {
   id: number;
   nombre: string;
-  region: string;        
-  foto: string;          
-  whatsapp?: string;    
-  email?: string;        
+  region: string;
+  foto: string;
+  whatsapp?: string;
+  email?: string;
 };
 
 const PROMOTORES: Promotor[] = [
   {
     id: 1,
-    nombre: "Juan Carlos Rodriguez Moreno",
-    region: "Pucallpa",
-    foto: "/promotores/JuanCarlos.jpeg",
-    whatsapp: "51999999999",
-    email: "maria@icap.pe",
+    nombre: "Pedro A. Arguelles De Bracamonte",
+    region: "(Gerente general)",
+    foto: "/promotores/PedroArguelles.jpg",
   },
   {
     id: 2,
-    nombre: "Karen Veronica Escudero Melendez",
-    region: "Iquitos",
-    foto: "/promotores/KarenEscudero.jpeg",
-    whatsapp: "51988888888",
-    email: "juan@icap.pe",
+    nombre: "Marisol Guerrero",
+    region: "Secretaria General",
+    foto: "/promotores/MarisolGuerrero.jpg",
   },
   {
     id: 3,
     nombre: "Julio Ysac Guerra Achong",
-    region: "Pucallpa",
+    region: "Aucayacu",
     foto: "/promotores/JulioGuerra.jpeg",
   },
   {
@@ -51,7 +47,7 @@ const PROMOTORES: Promotor[] = [
   {
     id: 6,
     nombre: "Salomon Martin Escobar",
-    region: "Iquitos",
+    region: "Tocache",
     foto: "/promotores/SalomonEscobar.jpg",
   },
   {
@@ -63,29 +59,107 @@ const PROMOTORES: Promotor[] = [
   {
     id: 8,
     nombre: "Segundo Jesus Medina Vasquez",
-    region: "Iquitos",
+    region: "Huanuco",
     foto: "/promotores/SegundoMedina.png",
   },
   {
     id: 9,
     nombre: "Victor Enrique Mejia Melendez",
-    region: "Pucallpa",
+    region: "Iquitos",
     foto: "/promotores/VictorMejia.png",
   },
-   {
+  {
     id: 10,
     nombre: "Tercero Isidoro Coquinche Sangama",
-    region: "Iquitos",
+    region: "Tarapoto",
     foto: "/promotores/TerceroConquinche.jpg",
   },
   {
     id: 11,
     nombre: "Alfredo Valderrama Tello",
-    region: "Iquitos",
+    region: "Pucallpa",
     foto: "/promotores/AlfredoValderrama.jpeg",
   },
-
-
+  {
+    id: 12,
+    nombre: "Fredy Mafaldo Paredes",
+    region: "Pucallpa - Iquitos",
+    foto: "/promotores/FredyParedes.png",
+  },
+  {
+    id: 13,
+    nombre: "Juan Carlos Vargas Cardenas",
+    region: "Contamana",
+    foto: "/promotores/JuanVargas.png",
+  },
+  {
+    id: 14,
+    nombre: "Carlos Alberto Avila Quiñe",
+    region: "Lima",
+    foto: "/promotores/CarlosAvila.png",
+  },
+  {
+    id: 15,
+    nombre: "Julio Cesar Amayo Payac",
+    region: "Pucallpa",
+    foto: "/promotores/man.png",
+  },
+  {
+    id: 16,
+    nombre: "Johajan Paul Del Aguila Pacaya",
+    region: "Iquitos",
+    foto: "/promotores/man.png",
+  },
+  {
+    id: 17,
+    nombre: "David Rios Saavedra",
+    region: "Tarapoto",
+    foto: "/promotores/DavidRios.png",
+  },
+  {
+    id: 18,
+    nombre: "Jorge Luis Sanchez Carpio",
+    region: "Chiclayo",
+    foto: "/promotores/JorgeSanchez.png",
+  },
+  {
+    id: 19,
+    nombre: "Dimas Puga Tuanama",
+    region: "Pucallpa",
+    foto: "/promotores/DimasTuanama.jpg",
+  },
+  {
+    id: 20,
+    nombre: "Juan Carlos Rodriguez Moreno",
+    region: "Pucallpa",
+    foto: "/promotores/JuanCarlos.jpeg",
+  },
+  {
+    id: 2,
+    nombre: "Aracely Guerrero Roman",
+    region: "Moyobamba",
+    foto: "/promotores/AracelyGuerrero.png",
+  },
+  {
+    id: 22,
+    nombre: "Alfonso Carmelo Chavez Otarola",
+    region: "Iquitos - Nauta - Requena",
+    foto: "/promotores/man.png",
+  },
+  {
+    id: 23,
+    nombre: "Maria Socorro Muñoz Mori",
+    region: "Jaen",
+    foto: "/promotores/MariaSocorro.png",
+  },
+  {
+    id: 24,
+    nombre: "Karen Veronica Escudero Melendez",
+    region: "Iquitos",
+    foto: "/promotores/KarenEscudero.jpeg",
+    whatsapp: "51988888888",
+    email: "juan@icap.pe",
+  },
 ];
 
 export default function Promotores() {
@@ -100,7 +174,8 @@ export default function Promotores() {
   const filtrados = useMemo(() => {
     const term = busqueda.trim().toLowerCase();
     return PROMOTORES.filter((p) => {
-      const coincideRegion = filtroRegion === "todos" || p.region === filtroRegion;
+      const coincideRegion =
+        filtroRegion === "todos" || p.region === filtroRegion;
       const coincideTexto =
         term.length === 0 ||
         p.nombre.toLowerCase().includes(term) ||
@@ -112,7 +187,9 @@ export default function Promotores() {
   return (
     <>
       <Head>
-        <title>Promotores | Instituto de Capacitación y Actualización Profesional</title>
+        <title>
+          Promotores | Instituto de Capacitación y Actualización Profesional
+        </title>
         <meta
           name="description"
           content="Conoce a nuestros promotores oficiales, su nombre y foto para una atención personalizada."
@@ -181,12 +258,12 @@ export default function Promotores() {
                 <input
                   type="text"
                   placeholder="Buscar por nombre o región"
-                  className="w-full py-2 outline-none"
+                  className="w-full py-2 outline-none text-gray-900 placeholder:text-gray-400 caret-sky-500"
                   value={busqueda}
                   onChange={(e) => setBusqueda(e.target.value)}
                 />
               </div>
-            </div>
+            </div>  
           </div>
 
           {/* Grid de promotores */}

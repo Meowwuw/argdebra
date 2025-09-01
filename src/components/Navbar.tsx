@@ -94,13 +94,13 @@ export default function Navbar() {
               />
             </Link>
             <div className="hidden md:flex flex-col justify-center items-center text-center ml-6 pl-3 border-l-2 border-[#00AEFF]">
-              <span className="text-[#FF0000] text-3xl font-extrabold leading-tight block mb-1">
+              <span className="text-[#FF0000] text-2xl font-extrabold leading-tight block mb-1">
                 ICAP ARGDEBRA
               </span>
               <span className="text-[#00AEFF] text-xs font-semibold leading-tight block">
                 INSTITUTO DE CAPACITACION Y
               </span>
-              <span className="text-[#00AEFF] text-xs font-semibold leading-tight block">
+              <span className="text-[#007CFF] text-xs font-semibold leading-tight block">
                 ACTUALIZACION PROFESIONAL
               </span>
             </div>
