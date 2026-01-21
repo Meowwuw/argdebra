@@ -7,7 +7,7 @@ import { FiExternalLink, FiChevronDown, FiSearch } from "react-icons/fi";
 export default function Convenios() {
   const [activeTab, setActiveTab] = useState("todos");
   const [expandedResolution, setExpandedResolution] = useState<number | null>(
-    null
+    null,
   );
 
   interface Resolucion {
@@ -54,9 +54,19 @@ export default function Convenios() {
       imagen: "/documentos/convenio-agunt-2025.jpg",
       pdf: "/documentos/convenio-agunt-2025.pdf",
     },
-    
     {
-      id: 4,
+      id: 4, 
+      universidad:
+        "Asociación de Graduados de la Universidad Nacional de Trujillo (AGUNT)",
+      titulo: "Resolución Directoral N° 012/AGUNT-2025",
+      fecha: "20/11/2025",
+      descripcion:
+        "Renovación de la participación institucional de ICAP ARGDEBRA S.A.C. para la certificación de eventos académicos (diplomados, cursos, seminarios, talleres, conferencias).",
+      imagen: "/documentos/resolucion-agunt-2025.jpg",
+      pdf: "/documentos/resolucion-agunt-2025.pdf",
+    },
+    {
+      id: 5,
       universidad: "Universidad Nacional de la Amazonía Peruana (UNAP)",
       titulo: "Resolución Rectoral N° 1322-2023-UNAP",
       fecha: "20/12/2023",
