@@ -28,9 +28,11 @@ const PROMOTORES: Promotor[] = [
   },
   {
     id: 3,
-    nombre: "Julio Ysac Guerra Achong",
-    region: "Aucayacu",
-    foto: "/promotores/JulioGuerra.jpeg",
+    nombre: "Alvaro Norberto Mera Rojas",
+    region: "Coordinador",
+    foto: "/promotores/Norberto.jpeg",
+    whatsapp: "51988888888",
+    email: "juan@icap.pe",
   },
   {
     id: 4,
@@ -108,7 +110,7 @@ const PROMOTORES: Promotor[] = [
     id: 16,
     nombre: "Johajan Paul Del Aguila Pacaya",
     region: "Iquitos",
-    foto: "/promotores/man.png",
+    foto: "/promotores/Johajan.jpeg",
   },
   {
     id: 17,
@@ -135,7 +137,7 @@ const PROMOTORES: Promotor[] = [
     foto: "/promotores/JuanCarlos.jpeg",
   },
   {
-    id: 2,
+    id: 21,
     nombre: "Aracely Guerrero Roman",
     region: "Moyobamba",
     foto: "/promotores/AracelyGuerrero.png",
@@ -160,6 +162,12 @@ const PROMOTORES: Promotor[] = [
     whatsapp: "51988888888",
     email: "juan@icap.pe",
   },
+  {
+    id: 25,
+    nombre: "Julio Ysac Guerra Achong",
+    region: "Aucayacu",
+    foto: "/promotores/JulioGuerra2.jpeg",
+  },
 ];
 
 export default function Promotores() {
@@ -168,7 +176,7 @@ export default function Promotores() {
 
   const regiones = useMemo(
     () => Array.from(new Set(PROMOTORES.map((p) => p.region))).sort(),
-    []
+    [],
   );
 
   const filtrados = useMemo(() => {
@@ -263,7 +271,7 @@ export default function Promotores() {
                   onChange={(e) => setBusqueda(e.target.value)}
                 />
               </div>
-            </div>  
+            </div>
           </div>
 
           {/* Grid de promotores */}
@@ -278,7 +286,7 @@ export default function Promotores() {
                     src={p.foto}
                     alt={`Foto de ${p.nombre}`}
                     fill
-                    className="rounded-full object-cover"
+                    className="rounded-full object-cover object-top"
                     sizes="144px"
                     priority
                   />

@@ -43,7 +43,6 @@ export default function Convenios() {
       imagen: "/documentos/RESOLUCION-2020.jpg",
       pdf: "/documentos/RESOLUCION-2020.jpg",
     },
-
     {
       id: 3,
       universidad:
@@ -55,6 +54,7 @@ export default function Convenios() {
       imagen: "/documentos/convenio-agunt-2025.jpg",
       pdf: "/documentos/convenio-agunt-2025.pdf",
     },
+    
     {
       id: 4,
       universidad: "Universidad Nacional de la Amazonía Peruana (UNAP)",
