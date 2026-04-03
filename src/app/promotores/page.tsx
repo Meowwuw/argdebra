@@ -27,14 +27,6 @@ const PROMOTORES: Promotor[] = [
     foto: "/promotores/MarisolGuerrero.jpg",
   },
   {
-    id: 3,
-    nombre: "Alvaro Norberto Mera Rojas",
-    region: "Coordinador",
-    foto: "/promotores/Norberto.jpeg",
-    whatsapp: "51988888888",
-    email: "juan@icap.pe",
-  },
-  {
     id: 4,
     nombre: "Luis Enrique Paredes Paredes",
     region: "Iquitos",
