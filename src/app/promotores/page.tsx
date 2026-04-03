@@ -63,12 +63,6 @@ const PROMOTORES: Promotor[] = [
     foto: "/promotores/VictorMejia.png",
   },
   {
-    id: 10,
-    nombre: "Tercero Isidoro Coquinche Sangama",
-    region: "Tarapoto",
-    foto: "/promotores/TerceroConquinche.jpg",
-  },
-  {
     id: 11,
     nombre: "Alfredo Valderrama Tello",
     region: "Pucallpa",
